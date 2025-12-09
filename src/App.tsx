@@ -10,6 +10,7 @@ import AffiliateCoupon from "./pages/Affiliate/Coupons"
 import SpecialCoupons from "./pages/Affiliate/SpecialCoupons";
 import PendingPayments from "./pages/Affiliate/Payments/PendingPayments";
 import PaymentHistory from "./pages/Affiliate/Payments/PaymentHistory";
+import Customization from "./pages/FAQ/App/Customization";
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(window.innerWidth >= 1020);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1020);
@@ -65,7 +66,7 @@ function App() {
             <Route path="/affiliate/payment" element={<PendingPayments/>} />
             <Route path="/affiliate/payments/pending-payment" element={<PendingPayments/>} />
             <Route path="/affiliate/payments/payment-history" element={<PaymentHistory/>} />
-            
+            <Route path="/FAQ/App/customization" element={<Customization/>} />
           </Routes>
         </main>
 
