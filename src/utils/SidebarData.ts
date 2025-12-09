@@ -80,9 +80,40 @@ export const sidebarData: SidebarItemType[] = [
     submenu: [
       { label: "Dashboard", path: "/affiliate/dashboard" },
       { label: "Commission", path: "/affiliate/commission" },
-      { label: "Coupons", path: "/affiliate/Coupons" },
+      { label: "Coupons", path: "/affiliate/coupons" },
       { label: "Sales", path: "/affiliate/sales" },
+      {
+        label: "Payments",
+        path: "/affiliate/payments",
+        sub: [
+          {
+            label: "Pending Payment",
+            path: "/affiliate/payments/pending-payment",
+          },
+          {
+            label: "Payment History",
+            path: "/affiliate/payments/payment-history",
+          },
+        ],
+      },
       { label: "Doctors", path: "/affiliate/doctors" },
+    ],
+  },
+  {
+    label: "FAQ",
+    icon: "/assets/svgs/referral-icon.svg",
+    path: "/FAQ",
+    submenu: [
+      {
+        label: "Web",
+        path: "/FAQ/web",
+        sub: [{ label: "Customization", path: "/FAQ/web/customization" }],
+      },
+      {
+        label: "App",
+        path: "/FAQ/app",
+        sub: [{ label: "Customization", path: "/FAQ/app/customization" }],
+      },
     ],
   },
 ];
