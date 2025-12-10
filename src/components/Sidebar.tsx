@@ -61,7 +61,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setOpen }) => {
                   <Link
                     to={sub.path}
                     className={`text-sm py-1 block ${
-                      active ? "text-green-800 font-medium" : "text-gray-600 hover:text-green-700"
+                      active
+                        ? "text-green-800 font-medium"
+                        : "text-gray-600 hover:text-green-700"
                     }`}
                     onClick={() => {
                       // close mobile sidebar after navigation
@@ -71,7 +73,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setOpen }) => {
                     {sub.label}
                   </Link>
                 ) : (
-                  <span className={`text-sm py-1 block ${active ? "text-green-800 font-medium" : "text-gray-600"}`}>
+                  <span
+                    className={`text-sm py-1 block ${active ? "text-green-800 font-medium" : "text-gray-600"}`}
+                  >
                     {sub.label}
                   </span>
                 )}
@@ -88,11 +92,13 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setOpen }) => {
               </div>
 
               {/* nested children — visible when expanded OR when current route matches any child */}
-              {hasChildren && (expanded[key] || sub.sub.some((c: any) => isPathActive(c.path))) && (
-                <div className="ml-4">
-                  {renderSubmenu(sub.sub, `${key}-`)}
-                </div>
-              )}
+              {hasChildren &&
+                (expanded[key] ||
+                  sub.sub.some((c: any) => isPathActive(c.path))) && (
+                  <div className="ml-4">
+                    {renderSubmenu(sub.sub, `${key}-`)}
+                  </div>
+                )}
             </div>
           );
         })}
@@ -140,7 +146,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setOpen }) => {
                   {isOpen && (
                     <span
                       className={`ml-3 text-sm ${
-                        isActiveTop ? "text-green-800 font-semibold" : "text-gray-600"
+                        isActiveTop
+                          ? "text-green-800 font-semibold"
+                          : "text-gray-600"
                       }`}
                     >
                       {item.label}
@@ -162,7 +170,8 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setOpen }) => {
               {isOpen && isActiveTop && item.submenu && (
                 <div className="ml-6 mt-1">
                   {item.submenu.map((sub: any, sIdx: number) => {
-                    const subHasChildren = Array.isArray(sub.sub) && sub.sub.length > 0;
+                    const subHasChildren =
+                      Array.isArray(sub.sub) && sub.sub.length > 0;
                     const subKey = `${idx}-${sIdx}`;
                     const subActive = isPathActive(sub.path);
 
@@ -172,7 +181,9 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setOpen }) => {
                           <Link
                             to={sub.path}
                             className={`block text-sm py-1 ${
-                              subActive ? "text-green-800" : "text-gray-600 hover:text-green-700"
+                              subActive
+                                ? "text-green-800"
+                                : "text-gray-600 hover:text-green-700"
                             }`}
                           >
                             {sub.label}
@@ -184,17 +195,22 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setOpen }) => {
                               className={`p-1 rounded-sm ${expanded[subKey] ? "rotate-90 text-green-700" : "text-gray-400"}`}
                               aria-expanded={!!expanded[subKey]}
                             >
-                              <Icon src="/assets/svgs/arrow-right.svg" size={10} />
+                              <Icon
+                                src="/assets/svgs/arrow-right.svg"
+                                size={10}
+                              />
                             </button>
                           )}
                         </div>
 
                         {/* nested sub-submenu */}
-                        {subHasChildren && (expanded[subKey] || sub.sub.some((c: any) => isPathActive(c.path))) && (
-                          <div className="ml-4">
-                            {renderSubmenu(sub.sub, `${subKey}-`)}
-                          </div>
-                        )}
+                        {subHasChildren &&
+                          (expanded[subKey] ||
+                            sub.sub.some((c: any) => isPathActive(c.path))) && (
+                            <div className="ml-4">
+                              {renderSubmenu(sub.sub, `${subKey}-`)}
+                            </div>
+                          )}
                       </div>
                     );
                   })}
@@ -212,7 +228,10 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, setOpen }) => {
     if (!isOpen) return null;
     return (
       <>
-        <div className="fixed inset-0 bg-black/40 z-40" onClick={() => setOpen(false)} />
+        <div
+          className="fixed inset-0 bg-black/40 z-40"
+          onClick={() => setOpen(false)}
+        />
         <div className="fixed left-0 h-full z-50">
           <SidebarContent />
         </div>

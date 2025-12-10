@@ -31,7 +31,7 @@ const FAQTabs: React.FC<FAQTabsProps> = ({ tabs, data }) => {
           </button>
         ))}
       </div>
-    <hr className="text-gray-300 font-bold" />
+      <hr className="text-gray-300 font-bold" />
       {/* FAQ LIST */}
       <FAQList items={data[activeTab]} />
     </div>

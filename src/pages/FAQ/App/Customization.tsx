@@ -94,7 +94,7 @@ function Customization() {
   const [replaceModalOpen, setReplaceModalOpen] = useState(false);
   const [selectionModalOpen, setSelectionModalOpen] = useState(false);
   useEffect(() => {
-    console.log("JHEL")
+    console.log("JHEL");
     console.log(isNewFaqOnHomePage);
     if (isNewFaqOnHomePage) {
       setReplaceModalOpen(true);
@@ -272,7 +272,7 @@ function Customization() {
         </div>
       </Modal>
       <Modal
-      width="sm:w-[40vw]"
+        width="sm:w-[40vw]"
         height="h-[75vh]"
         isOpen={selectionModalOpen}
         onClose={() => setSelectionModalOpen(false)}

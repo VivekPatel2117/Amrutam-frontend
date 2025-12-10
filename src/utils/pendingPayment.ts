@@ -59,7 +59,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 6,
     doctorName: "William Stephan",
     doctorImg: "/assets/images/avatar-1.png",
@@ -68,7 +69,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 7,
     doctorName: "Smith Birkin",
     doctorImg: "/assets/images/avatar-4.png",
@@ -77,7 +79,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 7,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -86,7 +89,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 9,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -95,7 +99,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 10,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -104,7 +109,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 11,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -113,7 +119,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 12,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -122,7 +129,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 13,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -131,7 +139,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 14,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -140,7 +149,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 15,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -149,7 +159,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 16,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -158,7 +169,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 17,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -167,7 +179,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 18,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -176,7 +189,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 19,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -185,7 +199,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 20,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -194,7 +209,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 21,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -203,7 +219,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 22,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -212,7 +229,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 23,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -221,7 +239,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 24,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -230,7 +249,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 25,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -239,7 +259,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 26,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -248,7 +269,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 27,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -257,7 +279,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 28,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -266,7 +289,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 29,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -275,7 +299,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 30,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -284,7 +309,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 31,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -293,7 +319,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 32,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -302,7 +329,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 33,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -311,7 +339,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 34,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -320,7 +349,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 35,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -329,7 +359,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 36,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -338,7 +369,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 37,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -347,7 +379,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 38,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -356,7 +389,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 39,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -365,7 +399,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 40,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -374,7 +409,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 41,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -383,7 +419,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 42,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",
@@ -392,7 +429,8 @@ export const pendingPaymentData: PendingPayment[] = [
     withdrawalAmount: "5,290",
     requestedDate: "1 Feb 2024",
     walletAmount: "30,000",
-  },{
+  },
+  {
     id: 43,
     doctorName: "Soumya Maheswari",
     doctorImg: "/assets/images/avatar-2.png",

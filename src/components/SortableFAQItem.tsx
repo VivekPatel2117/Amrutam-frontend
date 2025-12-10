@@ -9,12 +9,17 @@ interface Props {
   toggleSelected: () => void;
 }
 
-const SortableFAQItem: React.FC<Props> = ({ item, selected, toggleSelected }) => {
+const SortableFAQItem: React.FC<Props> = ({
+  item,
+  selected,
+  toggleSelected,
+}) => {
   const [open, setOpen] = useState(false);
 
-  const { attributes, listeners, setNodeRef, transform, transition } = useSortable({
-    id: item.id,
-  });
+  const { attributes, listeners, setNodeRef, transform, transition } =
+    useSortable({
+      id: item.id,
+    });
 
   const style = {
     transform: CSS.Transform.toString(transform),
@@ -22,9 +27,12 @@ const SortableFAQItem: React.FC<Props> = ({ item, selected, toggleSelected }) =>
   };
 
   return (
-    <div ref={setNodeRef} style={style} className="border-b border-gray-300 p-4">
+    <div
+      ref={setNodeRef}
+      style={style}
+      className="border-b border-gray-300 p-4"
+    >
       <div className="flex items-center justify-between">
-
         {/* CHECKBOX (2nd COLUMN) */}
         <input
           type="checkbox"
@@ -34,7 +42,11 @@ const SortableFAQItem: React.FC<Props> = ({ item, selected, toggleSelected }) =>
         />
 
         {/* Drag Handle */}
-        <button {...attributes} {...listeners} className="cursor-grab text-gray-400 mr-3">
+        <button
+          {...attributes}
+          {...listeners}
+          className="cursor-grab text-gray-400 mr-3"
+        >
           ⋮⋮
         </button>
 
@@ -52,9 +64,7 @@ const SortableFAQItem: React.FC<Props> = ({ item, selected, toggleSelected }) =>
         </button>
       </div>
 
-      {open && (
-        <p className="mt-3 text-gray-600 pl-10">{item.answer}</p>
-      )}
+      {open && <p className="mt-3 text-gray-600 pl-10">{item.answer}</p>}
     </div>
   );
 };

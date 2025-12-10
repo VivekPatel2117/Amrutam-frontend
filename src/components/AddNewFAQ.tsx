@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import FancyInput from "./ui/FancyInput";
 
 interface AddNewFAQProps {
@@ -6,8 +6,10 @@ interface AddNewFAQProps {
   setIsNewFaqOnHomePage: (val: boolean) => void;
 }
 
-const AddNewFAQ: React.FC<AddNewFAQProps> = ({ setIsNewFaq, setIsNewFaqOnHomePage }) => {
-
+const AddNewFAQ: React.FC<AddNewFAQProps> = ({
+  setIsNewFaq,
+  setIsNewFaqOnHomePage,
+}) => {
   const [platform, setPlatform] = useState("");
   const [title, setTitle] = useState("");
   const [homepage, setHomepage] = useState(false);
@@ -15,7 +17,11 @@ const AddNewFAQ: React.FC<AddNewFAQProps> = ({ setIsNewFaq, setIsNewFaqOnHomePag
   const [answer, setAnswer] = useState("");
 
   const isFormFilled =
-    platform !== "" || title !== "" || homepage === true || question !== "" || answer !== "";
+    platform !== "" ||
+    title !== "" ||
+    homepage === true ||
+    question !== "" ||
+    answer !== "";
 
   const buttonText = isFormFilled ? "Clear All" : "Back";
 
@@ -33,14 +39,14 @@ const AddNewFAQ: React.FC<AddNewFAQProps> = ({ setIsNewFaq, setIsNewFaqOnHomePag
       clearForm();
       console.log("Form cleared");
     } else {
-      setIsNewFaq(false)
+      setIsNewFaq(false);
     }
   };
 
   const handleSubmit = () => {
-    if(!isFormFilled) return;
-    if(homepage){
-      console.log(homepage)
+    if (!isFormFilled) return;
+    if (homepage) {
+      console.log(homepage);
       setIsNewFaqOnHomePage(true);
     }
     setIsNewFaq(false);
@@ -96,7 +102,9 @@ const AddNewFAQ: React.FC<AddNewFAQProps> = ({ setIsNewFaq, setIsNewFaqOnHomePag
         {/* Question */}
         <div className="w-full relative">
           <div className="absolute -top-3 left-4 px-1 bg-white z-10 flex items-center gap-1">
-            <label className="font-semibold text-sm text-black">Add Question</label>
+            <label className="font-semibold text-sm text-black">
+              Add Question
+            </label>
             <span className="text-red-500">*</span>
           </div>
 
@@ -111,7 +119,9 @@ const AddNewFAQ: React.FC<AddNewFAQProps> = ({ setIsNewFaq, setIsNewFaqOnHomePag
         {/* Answer */}
         <div className="w-full relative">
           <div className="absolute -top-3 left-4 px-1 bg-white z-10 flex items-center gap-1">
-            <label className="font-semibold text-sm text-black">Add Answer</label>
+            <label className="font-semibold text-sm text-black">
+              Add Answer
+            </label>
             <span className="text-red-500">*</span>
           </div>
 

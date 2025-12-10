@@ -17,8 +17,8 @@ const TopItem: React.FC<TopItemProps> = ({
   percent,
 }) => {
   let isPositive = true;
-  if(percent){
-     isPositive = percent >= 0;
+  if (percent) {
+    isPositive = percent >= 0;
   }
 
   return (
@@ -48,7 +48,6 @@ const TopItem: React.FC<TopItemProps> = ({
         >
           {isPositive ? "↑ +" : "↓"} {percent}%
         </div>
-
       )}
     </div>
   );

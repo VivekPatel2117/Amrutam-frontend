@@ -9,10 +9,8 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ isSidebarOpen, toggleSidebar }) => {
   return (
     <header className="w-full h-[70px] bg-white border-b border-gray-200 flex items-center justify-between px-4 sm:px-6 gap-4">
-      
       {/* LEFT: Logo + Menu */}
       <div className="flex items-center gap-2">
-        
         {/* Always show small company logo */}
         <Icon src="/assets/svgs/company-logo.svg" size={55} />
 
@@ -50,7 +48,6 @@ const Navbar: React.FC<NavbarProps> = ({ isSidebarOpen, toggleSidebar }) => {
 
       {/* RIGHT SIDE */}
       <div className="flex items-center gap-5">
-        
         {/* MESSAGE */}
         <div className="relative cursor-pointer hidden sm:block">
           <Icon src="/assets/svgs/message-icon.svg" size={23} />

@@ -3,15 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>amrutam-frontend</title>
+
+    <!-- Default SEO Tags -->
+    <meta
+      name="keywords"
+      content="Amrutam, Ayurveda, Ayurvedic products, health, wellness, herbal care, natural remedies"
+    />
+    <meta
+      name="description"
+      content="Amrutam - A modern Ayurvedic platform offering wellness products, consultations, and natural remedies."
+    />
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Change title dynamically
+        document.title = "Amrutam - Ayurvedic Wellness Platform";
+
+        // Update keywords
+        const keywordMeta = document.querySelector('meta[name="keywords"]');
+        if (keywordMeta) {
+          keywordMeta.setAttribute(
+            "content",
+            "Ayurveda, Amrutam, Natural Wellness, Herbal Medicine, Ayurvedic Consultation, Organic Health Products, Traditional Remedies"
+          );
+        }
+
+        // Update description
+        const descMeta = document.querySelector('meta[name="description"]');
+        if (descMeta) {
+          descMeta.setAttribute(
+            "content",
+            "Explore Amrutam, your modern Ayurvedic platform featuring wellness products, expert consultations, herbal remedies, and holistic lifestyle guidance."
+          );
+        }
+      });
+    </script>
   </body>
 </html>

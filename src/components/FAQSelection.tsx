@@ -8,13 +8,16 @@ interface FAQSelectionProps {
   onReplace: (selectedId: string) => void;
 }
 
-const FAQSelection: React.FC<FAQSelectionProps> = ({ faqs, onCancel, onReplace }) => {
+const FAQSelection: React.FC<FAQSelectionProps> = ({
+  faqs,
+  onCancel,
+  onReplace,
+}) => {
   const [selected, setSelected] = useState<string | null>(null);
   const [openId, setOpenId] = useState<string | null>(null);
 
   return (
     <div className="flex flex-col h-full">
-
       {/* Title */}
       <h2 className="text-center text-xl font-semibold mb-4">
         Select the question that you would like to replace it with
@@ -24,7 +27,6 @@ const FAQSelection: React.FC<FAQSelectionProps> = ({ faqs, onCancel, onReplace }
       <div className="flex-1 overflow-y-auto pr-2 space-y-4">
         {faqs.map((faq) => (
           <div key={faq.id} className="border-b border-gray-300 pb-3">
-
             {/* Row */}
             <div className="flex items-center justify-between">
               {/* Checkbox */}
@@ -55,17 +57,13 @@ const FAQSelection: React.FC<FAQSelectionProps> = ({ faqs, onCancel, onReplace }
             {openId === faq.id && (
               <p className="text-gray-600 mt-2 ml-7">{faq.answer}</p>
             )}
-
           </div>
         ))}
       </div>
 
       {/* Footer Buttons */}
       <div className="flex justify-end gap-8 items-center mt-4 pt-4">
-        <button
-          onClick={onCancel}
-          className="text-gray-700 text-lg"
-        >
+        <button onClick={onCancel} className="text-gray-700 text-lg">
           Cancel
         </button>
 
@@ -79,7 +77,6 @@ const FAQSelection: React.FC<FAQSelectionProps> = ({ faqs, onCancel, onReplace }
           Replace
         </Button>
       </div>
-
     </div>
   );
 };

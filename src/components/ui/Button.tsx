@@ -13,7 +13,7 @@ export const Button: React.FC<ButtonProps> = ({
   width,
   onClick,
   disabled = false,
-  className
+  className,
 }) => {
   return (
     <button

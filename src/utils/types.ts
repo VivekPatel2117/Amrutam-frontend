@@ -7,7 +7,7 @@ export type SubMenuItem = {
 export type SidebarItemType = {
   label: string;
   icon: string;
-  path?: string;               // optional parent route
+  path?: string; // optional parent route
   submenu?: SubMenuItem[];
 };
 

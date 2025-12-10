@@ -58,11 +58,17 @@ const FAQList: React.FC<FAQListProps> = ({ items }) => {
     );
   };
 
-
   return (
     <div>
-      <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
-        <SortableContext items={visibleRows.map((i) => i.id)} strategy={verticalListSortingStrategy}>
+      <DndContext
+        sensors={sensors}
+        collisionDetection={closestCenter}
+        onDragEnd={handleDragEnd}
+      >
+        <SortableContext
+          items={visibleRows.map((i) => i.id)}
+          strategy={verticalListSortingStrategy}
+        >
           <div className="space-y-2">
             {/* TABLE HEADER STYLE */}
 
@@ -84,9 +90,10 @@ const FAQList: React.FC<FAQListProps> = ({ items }) => {
         <div>Rows per page: {rowsPerPage}</div>
 
         <div className="flex items-center gap-3">
-            <span>
-              {startIndex + 1}-{Math.min(startIndex + rowsPerPage, faqs.length)} of {faqs.length}
-            </span>
+          <span>
+            {startIndex + 1}-{Math.min(startIndex + rowsPerPage, faqs.length)}{" "}
+            of {faqs.length}
+          </span>
           <button
             disabled={page === 1}
             className="px-2 py-1 rounded border disabled:opacity-40"
@@ -94,7 +101,6 @@ const FAQList: React.FC<FAQListProps> = ({ items }) => {
           >
             ‹
           </button>
-
 
           <button
             disabled={page === totalPages}

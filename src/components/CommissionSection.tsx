@@ -32,7 +32,6 @@ const CommissionSection: React.FC<CommissionSectionProps> = ({
   onSubmit,
   gridCols = 2, // default → 2 columns
 }) => {
-
   const gridClass = {
     1: "grid-cols-1",
     2: "grid-cols-2",
@@ -42,7 +41,6 @@ const CommissionSection: React.FC<CommissionSectionProps> = ({
 
   return (
     <div className="w-full p-6 rounded-3xl mt-4">
-
       {/* Title and Switch */}
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-xl font-medium text-gray-800">{title}</h2>
@@ -50,10 +48,13 @@ const CommissionSection: React.FC<CommissionSectionProps> = ({
       </div>
 
       {/* Disabled UI */}
-      <div className={`p-4 rounded-lg h-full ${
-        switchValue ? "bg-white" : "bg-gray-100 opacity-50 pointer-events-none"
-      }`}>
-
+      <div
+        className={`p-4 rounded-lg h-full ${
+          switchValue
+            ? "bg-white"
+            : "bg-gray-100 opacity-50 pointer-events-none"
+        }`}
+      >
         {/* Dynamic Grid */}
         <div className={`grid ${gridClass} gap-6 mb-10 mt-4`}>
           {fields.map((field, index) => (
@@ -78,6 +79,5 @@ const CommissionSection: React.FC<CommissionSectionProps> = ({
     </div>
   );
 };
-
 
 export default CommissionSection;

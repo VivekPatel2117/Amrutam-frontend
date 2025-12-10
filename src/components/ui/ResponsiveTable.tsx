@@ -100,7 +100,7 @@ const ResponsiveTable: React.FC<ResponsiveTableProps> = ({
                   <td key={colIndex} className="px-4 py-4 text-center text-sm">
                     {col.key === "select" && hasSelectColumn ? (
                       <input
-                      className="h-4 w-4"
+                        className="h-4 w-4"
                         type="checkbox"
                         checked={selectedRows.includes(idx)}
                         onChange={() => toggleRow(idx)}
@@ -129,10 +129,17 @@ const ResponsiveTable: React.FC<ResponsiveTableProps> = ({
 
       {/* PAGINATION */}
       <div className="flex justify-between items-center mt-4">
-        <span className="text-gray-500">Rows per page: {rowsPerPage} {selectedRows.length> 0 ? "| Selected Rows: " + selectedRows.length : ""}</span>
+        <span className="text-gray-500">
+          Rows per page: {rowsPerPage}{" "}
+          {selectedRows.length > 0
+            ? "| Selected Rows: " + selectedRows.length
+            : ""}
+        </span>
 
         <div className="flex items-center gap-2">
-          <span className="text-gray-500">{page} - {rowsPerPage} of {data.length}</span>
+          <span className="text-gray-500">
+            {page} - {rowsPerPage} of {data.length}
+          </span>
           <button
             disabled={page === 1}
             onClick={() => setPage(page - 1)}
@@ -140,7 +147,6 @@ const ResponsiveTable: React.FC<ResponsiveTableProps> = ({
           >
             ‹
           </button>
-
 
           <button
             disabled={page === totalPages}

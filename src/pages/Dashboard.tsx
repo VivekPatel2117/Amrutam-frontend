@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Dashboard() {
   return (
-    <div className='flex flex-col'>
-       <p>Dashboard</p>
+    <div className="flex flex-col">
+      <p>Dashboard</p>
     </div>
-  )
+  );
 }
 
-export default Dashboard
+export default Dashboard;

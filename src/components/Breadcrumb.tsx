@@ -4,9 +4,7 @@ const Breadcrumb = () => {
   const location = useLocation();
 
   // Split and clean path
-  const pathnames = location.pathname
-    .split("/")
-    .filter((x) => x);
+  const pathnames = location.pathname.split("/").filter((x) => x);
 
   // Convert "special-commission" → "Special Commission"
   const formatBreadcrumb = (str: string) => {

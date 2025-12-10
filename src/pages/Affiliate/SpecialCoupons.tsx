@@ -18,10 +18,8 @@ export default function SpecialCoupons() {
         onSwitchChange={setIsEnabled}
         buttonText="Add Coupon"
         onSubmit={() => console.log("Coupon Added")}
-
         // 🔥 Add this to control number of fields in a row
         gridCols={2}
-
         fields={[
           {
             label: "Product Name",
