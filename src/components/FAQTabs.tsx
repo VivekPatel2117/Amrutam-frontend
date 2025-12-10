@@ -19,7 +19,7 @@ const FAQTabs: React.FC<FAQTabsProps> = ({ tabs, data }) => {
   return (
     <div className="w-full bg-white rounded-xl">
       {/* TABS */}
-      <div className="flex justify-center gap-20 mb-2">
+      <div className="flex sm:justify-center gap-20 mb-2 overflow-x-auto">
         {tabs.map((tab) => (
           <button
             key={tab}

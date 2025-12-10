@@ -272,7 +272,7 @@ function Customization() {
         </div>
       </Modal>
       <Modal
-      width="w-[40vw]"
+      width="sm:w-[40vw]"
         height="h-[75vh]"
         isOpen={selectionModalOpen}
         onClose={() => setSelectionModalOpen(false)}
